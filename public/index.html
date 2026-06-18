@@ -112,6 +112,8 @@
     .coupang-ad { text-align: center; padding: 8px 0 4px; overflow-x: auto; }
     .coupang-ad .disclosure { color: var(--muted); font-size: 11px; margin-top: 10px; }
 
+    .screenshot { display: block; max-width: 100%; height: auto; margin: 0 auto 36px; border-radius: 12px; }
+
     footer {
       border-top: 1px solid var(--border);
       padding: 40px 20px; text-align: center;
@@ -147,12 +149,13 @@
 
     <section>
       <h2>주요 기능</h2>
-      <p class="sub">키 하나로 타이머를 시작하고, 원하는 소리로 알림을 받으세요.</p>
+      <p class="sub">키 하나로 타이머를 시작하고, 타이머가 끝날 때 알림을 받으세요.</p>
+      <img class="screenshot" src="sample.png" alt="KeyPing 화면" />
       <div class="features">
         <div class="feature">
           <div class="ico">⌨️</div>
           <h3>단일 키 등록</h3>
-          <p>원하는 키 하나를 등록 (예: F8, Pause)</p>
+          <p>원하는 키 하나를 등록 (예: F8, Pause). 핫키를 누르면 언제든 타이머가 즉시 재시작됩니다</p>
         </div>
         <div class="feature">
           <div class="ico">⏲️</div>
@@ -162,7 +165,7 @@
         <div class="feature">
           <div class="ico">🔊</div>
           <h3>오디오 알림</h3>
-          <p>MP3, WAV 등 다양한 형식의 알림음 지원</p>
+          <p>타이머 종료 시 알림 소리 재생</p>
         </div>
         <div class="feature">
           <div class="ico">⏯️</div>
@@ -188,6 +191,14 @@
     const EXE_NAME = "KeyPing.exe";
 
     const versions = [
+      {
+        version: "2026.06.18-1",
+        date: "2026.06.18",
+        tag: "v2026.06.18-1",
+        notes: [
+          "분/초 입력값이 포커스 이동 시에도 자동 반영되도록 개선했습니다.",
+        ],
+      },
       {
         version: "2026.06.18",
         date: "2026.06.18",
